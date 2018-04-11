@@ -13,6 +13,11 @@ function destructivelyAddElementToBeginningOfArray(array, element) {
 
 function addElementToEndOfArray(array, element) {
   new_arr = array.slice()
-  new_arr.unshift(element)
+  new_arr.push(element)
   return new_arr
+}
+
+function destructivelyAddElementToEndOfArray(array, element) {
+  array.push(element)
+  return array
 }
